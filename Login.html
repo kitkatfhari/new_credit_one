@@ -1,56 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit One Login</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/login.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Credit One Login</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<!-- <link rel="stylesheet" href="/css/login.css"> -->
 </head>
+
 <body>
-    <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
-        <div class="row w-100">
-            <div class="col-md-6 d-none d-md-flex welcome-section align-items-center justify-content-center">
-                <img src="/assets/image/loginIllustration.png" alt="Welcome" class="img-fluid">
-            </div>
-            <div class="col-md-6 login-section d-flex flex-column align-items-center justify-content-center">
-                <img src="/assets/image/logo.png" alt="Credit One" class="logo mb-4">
-                <h1 class="mb-4">Welcome Back</h1>
-                <form class="w-75">
-                    <div class="form-group">
-                        <label for="username">Enter User Name</label>
-                        <input type="text" class="form-control" id="username" name="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <div class="input-group">
-                            <input type="password" class="form-control" id="password" name="password">
-                            <div class="input-group-append">
-                                <span class="input-group-text" onclick="togglePasswordVisibility()">👁️</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block mb-3">Login Now</button>
-                    <button type="button" class="btn btn-light btn-block google-login mb-3">
+	<section class="">
+		<div class="container nav-res-container">
+			<div class="container">
+				<nav>
+					<div class="navbar">
+						<i class='bx bx-menu'></i>
+						<div class="logo"><a href="./index.html"><img src="./assets/image/logo.png" alt=""
+									class="coincred_logo"></a></div>
+						<div class="nav-links">
+							<div class="sidebar-logo">
+								<span class="logo-name"><a href="#"><img src="./assets/image/logo.png" alt=""
+											class="coincred_logo"></a></span>
+								<i class='bx bx-x'></i>
+							</div>
+							<ul class="links">
+								<li><a href="./index.html">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li>
+									<a href="#">Product</a>
+									<i class='bx bxs-chevron-down js-arrow arrow '></i>
+									<ul class="js-sub-menu sub-menu">
+										<li><a href="./privacy-policy.html">Personal Laon</a></li>
+										<li><a href="./about.html">Business Loan</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Contact</a></li>
+								<li class="doneshow-502">
+									<div class="search-box">
+										<ul class="header-login">
+											<li><a href="./login.html" style="color: #fff;">Track yout loan status</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="new-btnsec">
+							<div class="search-box">
+								<ul class="header-login">
+									<li><a href="./Login.html">Apply for Loan</a></li>
+								</ul>
+							</div>
+							<div class="search-box">
+								<ul class="header-login">
+									<li class="doneshow-501"><a href="./login.html">Track yout loan status</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="new-btnsec doneshow-501">
+						<div class="search-box">
+							<ul class="header-login">
+								<li><a href="./login.html">Apply for Loan</a></li>
+							</ul>
+						</div>
+						<div class="search-box">
+							<ul class="header-login">
+								<li><a href="./login.html">Track yout loan status</a></li>
+							</ul>
+						</div>
+					</div>  -->
+				</nav>
+			</div>
+		</div>
+	</section>
+	<div class="container-fluid d-flex justify-content-center align-items-center">
+		<div class="row w-100">
+			<div class="col-md-6 d-none d-md-flex welcome-section align-items-center justify-content-center">
+				<img src="/assets/image/loginIllustration.png" alt="Welcome" class="img-fluid">
+			</div>
+			<div class="col-md-6 login-section d-flex flex-column align-items-center justify-content-center">
+				<img src="/assets/image/logo.png" alt="Credit One" class="logo mb-4">
+				<h1 class="mb-4">Welcome Back</h1>
+				<form class="w-75">
+					<div class="form-group">
+						<label for="username">Enter User Name</label>
+						<input type="text" class="form-control" id="username" name="username">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<div class="input-group">
+							<input type="password" class="form-control" id="password" name="password">
+							<div class="input-group-append">
+								<span class="input-group-text" onclick="togglePasswordVisibility()">👁️</span>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary btn-block mb-3">Login Now</button>
+					<button type="button" class="btn btn-light btn-block google-login mb-3">
 						<img src="/assets/image/google.png" alt="google" class="google-btn-logo" />
 						<span>Login with Google</span>
 					</button>
-                    <div class="text-center additional-options">
-                        <a href="#">Forget Password? Click Here</a>
-                        <br>
-                        <a href="#">Don't have an account? Create new account now</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+					<div class="text-center additional-options">
+						<a href="#">Forget Password? Click Here</a>
+						<br>
+						<a href="#">Don't have an account? Create new account now</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<section class="footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer-logo">
+							<a href="./index.html"><img src="./assets/image/logo.png" alt="" class="footer-logo"></a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h6 class="footer-cmn-heading">Step up your crypto trading to the next level</h6>
+						<h6 class="footerfind">Find us Here</h6>
+						<ul class="footer-social">
+							<li><a href="https://www.facebook.com/profile.php?id=100087902046367" target="_blank"><img
+										src="./assets/image/facebook.png" alt=""></a>
+							</li>
+							<li><a href="https://www.linkedin.com/company/coin-cred/" target="_blank"><img
+										src="./assets/image/linkedin.png" alt=""></a>
+							</li>
+							<li><a href="https://t.me/coin_cred" target="_blank"><img src="./assets/image/telegram.png"
+										alt=""></a>
+							</li>
+							<li><a href="https://twitter.com/coincredofficl" target="_blank"><img
+										src="./assets/image/twitter.png" alt=""></a></li>
+							<li><a href="https://www.instagram.com/coincredofficial/" target="_blank"><img
+										src="./assets/image/instagram.png" alt=""></a></li>
+							<li><a href="https://www.youtube.com/@coincredofficial" target="_blank"><img
+										src="./assets/image/youtube.png" alt=""></a></li>
+						</ul>
+						<p class="footerfind">Connect With Us</p>
+						<div class="newsletter-res">
+							<form action="">
+								<input type="email" name="" id="" placeholder="E-Mail"
+									class="footernewletter changecolorfooter">
+								<button type="submit" class="footerbtnnewsletter">Subscribe</button>
+							</form>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="conter-footer">
+							<h6 class="footer-cmn-heading newfooter-border">Useful Link</h6>
+							<ul class="useful">
+								<li><a href="./terms-and-condition.html">Terms of Use</a></li>
+								<li><a href="./privacy-policy.html">Privacy Policy</a></li>
+								<li><a href="./faq.html">FAQs</a></li>
+								<li><a href="./trust-and-safety.html">Trust & Safety</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="last-footer">
+							<h6 class="footer-cmn-heading newfooter-border-1">For all the Updates</h6>
+							<p>of new opportunities, events, giveaways, new coin launches and more</p>
+							<div class="mainf-ter-community">
+								<a href="https://t.me/coin_cred"><img src="./assets/image/joincomm-footer.png" alt="">
+									Join CoinCRED
+									Community</a>
+							</div>
+							<div class="footer-app">
+								<ul>
+									<li><a href="https://apps.apple.com/in/app/coincred/id1596466402"><img
+												src="./assets/image/appstore.png" alt=""></a></li>
+									<li><a
+											href="https://play.google.com/store/apps/details?id=com.coincred.android&pli=1"><img
+												src="./assets/image/playstore.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<h6 class="copyright">Copyright ©2022 CoinCRED. All rights reserved.</h6>
+	</footer>
 
-    <script>
-        function togglePasswordVisibility() {
-            var passwordField = document.getElementById('password');
-            var passwordType = passwordField.getAttribute('type');
-            passwordField.setAttribute('type', passwordType === 'password' ? 'text' : 'password');
-        }
-    </script>
+	<script>
+		function togglePasswordVisibility() {
+			var passwordField = document.getElementById('password');
+			var passwordType = passwordField.getAttribute('type');
+			passwordField.setAttribute('type', passwordType === 'password' ? 'text' : 'password');
+		}
+	</script>
 </body>
+
 </html>
