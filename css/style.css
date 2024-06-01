@@ -219,6 +219,7 @@ input:focus {
 .footer-section {
   background-color: #102e6b;
   padding: 60px 0px 20px 0px;
+  min-width: 100vw;
 }
 .cpright-heading {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
