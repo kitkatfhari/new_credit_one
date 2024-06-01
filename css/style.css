@@ -977,13 +977,22 @@ body {
   flex-direction: column;
   margin: 0;
 }
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 10px 20px;
   transition: transform 0.2s;
-  width: 500px;
+  width: 700px;
   text-align: center;
 }
 
@@ -1228,4 +1237,9 @@ nav .navbar .links li .sub-menu li {
   box-shadow: rgb(2, 112, 230) 0px 20px 30px -10px;
   border-radius: 8px;
 }
+}
+
+
+.mt-90 {
+  margin-top: 90px;
 }
